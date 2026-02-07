@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Briefcase, GraduationCap, Rocket, Code, TrendingUp, Zap, Database, BarChart3, Users, FlaskConical, ChevronRight, Wallet, Globe, Search, FileText, Settings, Palette, Shield } from 'lucide-react'
 import Image from 'next/image'
+import profilePic from '@/public/pfp.jpg'
 
 export default function About() {
   const timelineItems = [
@@ -87,11 +88,12 @@ export default function About() {
           <div className="phantom-card p-6 mb-6 text-center">
             <div className="w-20 h-20 rounded-full mx-auto mb-4 overflow-hidden">
               <Image
-                src="/pfp.jpg"
+                src={profilePic}
                 alt="Dor Cohen"
                 width={80}
                 height={80}
                 className="w-full h-full object-cover"
+                priority
               />
             </div>
             <h2 className="text-2xl font-semibold text-phantom-text mb-1">Dor Cohen</h2>

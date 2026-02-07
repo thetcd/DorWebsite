@@ -8,6 +8,7 @@ const nextConfig = {
   // Optimize images
   images: {
     formats: ['image/avif', 'image/webp'],
+    unoptimized: false,
   },
   // Enable experimental features for better performance
   experimental: {
