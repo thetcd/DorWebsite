@@ -2,20 +2,28 @@
 
 import { motion } from 'framer-motion'
 import { Briefcase, GraduationCap, Rocket, Code, TrendingUp, Zap, Database, BarChart3, Users, FlaskConical, ChevronRight, Wallet, Globe, Search, FileText, Settings, Palette, Shield } from 'lucide-react'
+import Image from 'next/image'
 
 export default function About() {
   const timelineItems = [
+    {
+      title: 'ForDeFi',
+      subtitle: 'Customer Success Engineer',
+      description: 'Supporting institutional MPC wallet customers; leveraging data analysis to scale support operations and improve efficiency',
+      icon: Briefcase,
+      date: '2026–Present',
+    },
     {
       title: 'SeaSwap',
       subtitle: 'Co-Founder',
       description: 'Leading product development, business strategy, and go-to-market execution for a DEX aggregator',
       icon: Rocket,
-      date: '2025–Present',
+      date: '2025–2025',
     },
     {
       title: 'Utila',
       subtitle: 'QA Engineer',
-      description: 'First QA hire; built test plans and tested web, mobile, Chrome extension, and API flows across dozens of integrations',
+      description: 'First QA hire; tested MPC wallet infrastructure across web, mobile, extension, and API; validated 50+ blockchain integrations',
       icon: Briefcase,
       date: '2023–2025',
     },
@@ -62,11 +70,11 @@ export default function About() {
 
   const interests = [
     { icon: BarChart3, label: 'Data analysis' },
+    { icon: TrendingUp, label: 'Economics' },
     { icon: Zap, label: 'Basketball' },
-    { icon: TrendingUp, label: 'Prediction markets' },
+    { icon: Wallet, label: 'Investments' },
     { icon: FileText, label: 'Product strategy' },
-    { icon: Palette, label: 'Web3 UX' },
-    { icon: FlaskConical, label: 'DeFi experimentation' },
+    { icon: Globe, label: 'Web3' },
   ]
 
   return (
@@ -77,15 +85,21 @@ export default function About() {
 
           {/* Profile Header */}
           <div className="phantom-card p-6 mb-6 text-center">
-            <div className="w-20 h-20 rounded-full bg-phantom-purple/20 flex items-center justify-center mx-auto mb-4">
-              <span className="text-3xl font-semibold text-phantom-purple">DC</span>
+            <div className="w-20 h-20 rounded-full mx-auto mb-4 overflow-hidden">
+              <Image
+                src="/PFP.jpg"
+                alt="Dor Cohen"
+                width={80}
+                height={80}
+                className="w-full h-full object-cover"
+              />
             </div>
             <h2 className="text-2xl font-semibold text-phantom-text mb-1">Dor Cohen</h2>
-            <p className="text-sm text-phantom-text-secondary mb-4">Web3 & Fintech Professional</p>
+            <p className="text-sm text-phantom-text-secondary mb-4">MPC Wallet Expert & Web3 Professional</p>
             <div className="flex items-center justify-center gap-2">
-              <span className="text-xs text-phantom-text-tertiary">QA Engineer</span>
+              <span className="text-xs text-phantom-text-tertiary">Customer Success</span>
               <span className="text-phantom-text-tertiary">•</span>
-              <span className="text-xs text-phantom-text-tertiary">Product & BD</span>
+              <span className="text-xs text-phantom-text-tertiary">QA & Product</span>
             </div>
           </div>
 
@@ -93,10 +107,10 @@ export default function About() {
           <div className="phantom-card p-4 mb-4">
             <h3 className="text-lg font-semibold text-phantom-text mb-3">About</h3>
             <p className="text-sm text-phantom-text-secondary leading-relaxed mb-3">
-              Web3 and fintech professional with experience across QA, product, and business development. I co-founded SeaSwap and previously founded EmeraldDAO, gaining hands-on experience in blockchain integrations, product design, and ecosystem growth. Passionate about decentralized innovation and bridging the gap between technology and business.
+              Web3 professional with experience across QA, customer success, and product development. Co-founded SeaSwap (DEX aggregator) and EmeraldDAO (one of the first Cardano DAOs), gaining hands-on experience in blockchain integrations, product design, and ecosystem growth.
             </p>
             <p className="text-sm text-phantom-text-secondary leading-relaxed">
-              I’m comfortable working cross-functionally with product and engineering to deliver reliable releases and translate technical work into business value.
+              Specialized in MPC wallet solutions through 2+ years at Utila and ForDeFi, testing and supporting multi-chain integrations across 50+ blockchain networks. Data-oriented approach to organizing workflows, analyzing patterns, and improving operational efficiency.
             </p>
           </div>
 
@@ -104,14 +118,14 @@ export default function About() {
           <div className="phantom-card p-4 mb-4">
             <h3 className="text-lg font-semibold text-phantom-text mb-3">Skills</h3>
             <div className="space-y-2 mb-4">
-              <p className="text-xs text-phantom-text-secondary">Blockchain integrations (EVM, BTC, Solana, TON)</p>
-              <p className="text-xs text-phantom-text-secondary">Web3 wallets & DEX tools</p>
-              <p className="text-xs text-phantom-text-secondary">On-chain analysis (Etherscan, Solscan, TONScan)</p>
-              <p className="text-xs text-phantom-text-secondary">Product research & scoping</p>
-              <p className="text-xs text-phantom-text-secondary">Market analysis</p>
-              <p className="text-xs text-phantom-text-secondary">Basic SQL</p>
-              <p className="text-xs text-phantom-text-secondary">Basic Python</p>
-              <p className="text-xs text-phantom-text-secondary">Jira, GitHub, Postman, Swagger, Figma, Datadog</p>
+              <p className="text-xs text-phantom-text-secondary">MPC wallet solutions (testing & supporting custody workflows)</p>
+              <p className="text-xs text-phantom-text-secondary">Multi-chain integrations (EVM, BTC, Solana, TON, 50+ networks)</p>
+              <p className="text-xs text-phantom-text-secondary">Institutional Web3 workflows & compliance tools (Chainalysis, TRM Labs)</p>
+              <p className="text-xs text-phantom-text-secondary">On-chain analysis & transaction testing</p>
+              <p className="text-xs text-phantom-text-secondary">Customer success & technical support</p>
+              <p className="text-xs text-phantom-text-secondary">Product research, QA, and data analysis</p>
+              <p className="text-xs text-phantom-text-secondary">SQL, Python, API testing (Postman, Swagger)</p>
+              <p className="text-xs text-phantom-text-secondary">Jira, GitHub, Figma, Datadog, DevTools, MongoDB, Notion, HubSpot, Snowflake</p>
             </div>
           </div>
 

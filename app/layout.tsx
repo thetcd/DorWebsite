@@ -7,19 +7,43 @@ import { Suspense } from 'react'
 import LoadingSpinner from './components/LoadingSpinner'
 
 export const metadata: Metadata = {
-  title: 'Dor Cohen — Web3 & Fintech Professional',
-  description: 'Web3 and fintech professional with experience across QA, product, and business development. Co-founded SeaSwap and EmeraldDAO. Passionate about decentralized innovation.',
-  keywords: ['Web3', 'Blockchain', 'DeFi', 'Crypto', 'Product Development', 'QA', 'Dor Cohen'],
+  metadataBase: new URL('https://dor-cohen.com'),
+  title: {
+    default: 'Dor Cohen — MPC Wallet Expert & Web3 Professional',
+    template: '%s | Dor Cohen',
+  },
+  description: 'MPC wallet specialist with 2+ years at Utila and ForDeFi. Expertise in institutional custody, multi-chain integrations, and Web3 infrastructure. Co-founded SeaSwap and EmeraldDAO.',
+  keywords: ['MPC Wallet', 'Web3', 'Blockchain', 'DeFi', 'Crypto', 'Customer Success', 'QA', 'ForDeFi', 'Utila', 'Dor Cohen', 'Multi-Party Computation', 'Custody Solutions', 'Institutional Crypto'],
   authors: [{ name: 'Dor Cohen' }],
+  creator: 'Dor Cohen',
+  publisher: 'Dor Cohen',
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
-    title: 'Dor Cohen — Web3 & Fintech Professional',
-    description: 'Web3 and fintech professional with experience across QA, product, and business development.',
     type: 'website',
+    locale: 'en_US',
+    url: 'https://dor-cohen.com',
+    title: 'Dor Cohen — MPC Wallet Expert & Web3 Professional',
+    description: 'MPC wallet specialist with expertise in institutional custody and multi-chain integrations. 2+ years at ForDeFi and Utila.',
+    siteName: 'Dor Cohen Portfolio',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dor Cohen — Web3 & Fintech Professional',
-    description: 'Web3 and fintech professional with experience across QA, product, and business development.',
+    title: 'Dor Cohen — MPC Wallet Expert & Web3 Professional',
+    description: 'MPC wallet specialist with expertise in institutional custody and multi-chain integrations. 2+ years at ForDeFi and Utila.',
+    creator: '@ThetcdDC',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 }
 

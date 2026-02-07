@@ -12,7 +12,7 @@ export default function Navbar() {
     { href: '/', label: 'Wallet', icon: Wallet },
     { href: '/about', label: 'Profile', icon: User },
     { href: '/experience', label: 'History', icon: History },
-    { href: '/contact', label: 'Settings', icon: Settings },
+    { href: '/contact', label: 'Contact', icon: Settings },
   ]
 
   return (

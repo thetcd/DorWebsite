@@ -7,11 +7,25 @@ export default function Experience() {
   const transactions = [
     {
       type: 'work',
+      icon: Briefcase,
+      title: 'ForDeFi',
+      subtitle: 'Customer Success Engineer',
+      amount: '2026–Present',
+      time: '2026–Present',
+      positive: true,
+      details: [
+        'Customer support and customer success for DeFi users and partners',
+        'Data analysis to organize support workflows and improve efficiency',
+        'Scaling and streamlining support operations',
+      ],
+    },
+    {
+      type: 'work',
       icon: Rocket,
       title: 'SeaSwap',
       subtitle: 'Co-Founder',
-      amount: '2025–Present',
-      time: '2025–Present',
+      amount: '2025–2025',
+      time: '2025–2025',
       positive: true,
       details: [
         'Leading product development, business strategy, and go-to-market execution for a DEX aggregator',

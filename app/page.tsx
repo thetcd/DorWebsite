@@ -19,10 +19,19 @@ export default function Home() {
 
   const assets = [
     {
+      icon: Briefcase,
+      name: 'ForDeFi',
+      symbol: 'Customer Success',
+      balance: 'Active',
+      value: '2026–Present',
+      change: 'MPC Wallet Support',
+      positive: true,
+    },
+    {
       icon: Rocket,
       name: 'SeaSwap',
       symbol: 'DEX Aggregator',
-      balance: 'Active',
+      balance: 'Co-Founder',
       value: '2025',
       change: 'Product Development & Strategy',
       positive: true,
@@ -33,7 +42,7 @@ export default function Home() {
       symbol: 'QA',
       balance: 'QA Engineer',
       value: '2023–2025',
-      change: 'Web / Mobile / Extension / API',
+      change: 'MPC Wallet Testing',
       positive: true,
     },
     {
@@ -57,6 +66,7 @@ export default function Home() {
   ]
 
   const transactions = [
+    { type: 'update', amount: 'ForDeFi', token: 'Customer Success Engineer', time: '2026–Present', icon: ArrowDownRight },
     { type: 'update', amount: 'SeaSwap', token: 'Co-Founder', time: '2025', icon: ArrowDownRight },
     { type: 'update', amount: 'Utila', token: 'QA Engineer', time: '2023–2025', icon: ArrowDownRight },
     { type: 'education', amount: 'Tel Aviv University', token: 'BA Economics & Business', time: '2022–2025', icon: ArrowDownRight },

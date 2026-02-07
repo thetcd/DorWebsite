@@ -41,7 +41,7 @@ export default function Contact() {
     <div className="min-h-screen bg-phantom-bg pb-20">
       <div className="max-w-md mx-auto px-4">
         <div className="pt-8 pb-6">
-          <h1 className="text-2xl font-semibold text-phantom-text mb-6">Settings</h1>
+          <h1 className="text-2xl font-semibold text-phantom-text mb-6">Contact Me</h1>
 
           <div className="space-y-2 mb-6">
             {contactLinks.map((link, index) => {
@@ -91,10 +91,6 @@ export default function Contact() {
           </div>
 
           <div className="phantom-card p-4">
-            <h3 className="text-lg font-semibold text-phantom-text mb-3">About</h3>
-            <p className="text-sm text-phantom-text-secondary leading-relaxed mb-4">
-              Web3 and fintech professional with experience across QA, product, and business development. I co-founded SeaSwap and previously founded EmeraldDAO, gaining hands-on experience in blockchain integrations, product design, and ecosystem growth. Passionate about decentralized innovation and bridging the gap between technology and business.
-            </p>
             <a
               href="/api/cv"
               target="_blank"
