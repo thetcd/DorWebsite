@@ -87,7 +87,7 @@ export default function About() {
           <div className="phantom-card p-6 mb-6 text-center">
             <div className="w-20 h-20 rounded-full mx-auto mb-4 overflow-hidden">
               <Image
-                src="/PFP.jpg"
+                src="/pfp.jpg"
                 alt="Dor Cohen"
                 width={80}
                 height={80}
