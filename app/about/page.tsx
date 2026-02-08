@@ -87,7 +87,7 @@ export default function About() {
             <div className="w-20 h-20 rounded-full mx-auto mb-4 overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/PFP.jpg"
+                src="/pfp.jpg"
                 alt="Dor Cohen"
                 width={80}
                 height={80}

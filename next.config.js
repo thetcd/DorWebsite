@@ -5,10 +5,9 @@ const nextConfig = {
   swcMinify: true,
   // Enable compression
   compress: true,
-  // Optimize images
+  // Serve images directly without optimization
   images: {
-    formats: ['image/avif', 'image/webp'],
-    unoptimized: false,
+    unoptimized: true,
   },
   // Enable experimental features for better performance
   experimental: {
